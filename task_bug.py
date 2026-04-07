@@ -4,6 +4,13 @@ import pdb
 # import os
 
 def add_task(tasks, task):
+    """
+    Adds a task to the tasks list.
+
+    :param tasks: List of tasks (list of tuples)
+    :param task: Description of the task (string)
+    :return: None
+    """
     # breakpoint()
     tasks.append((task, False))
 
