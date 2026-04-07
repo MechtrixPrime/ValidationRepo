@@ -15,6 +15,13 @@ def add_task(tasks, task):
     tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
+    """
+    Marks a task as completed.
+
+    :param tasks: List of tasks
+    :param index: Index of the task
+    :return: None
+    """
     if 0 <= index < len(tasks):
         task_desc, _ = tasks[index]
         tasks[index] = (task_desc, True)
