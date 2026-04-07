@@ -2,7 +2,6 @@
 
 A simple Python **Task Manager** that allows you to add, complete, delete, list, sort, and search tasks.  
 This project includes **unit tests**, **code coverage**, and **automated documentation using Sphinx** hosted on GitHub Pages.
-
 ---
 
 ## Features
