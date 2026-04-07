@@ -65,6 +65,15 @@ def sort_tasks(tasks):
     tasks.sort(key=lambda x: x[0])
 
 def binary_search(tasks, target):
+    """
+    Searches for a task using binary search.
+
+    NOTE: Tasks are sorted internally before searching.
+
+    :param tasks:  List of tasks
+    :param target: Task description to find
+    :return: Index of the task, else -1
+    """
     tasks = sorted(tasks, key=lambda x: x[0])
     low, high = 0, len(tasks) - 1
     while low <= high:
