@@ -42,6 +42,12 @@ def delete_task(tasks, index):
         print("Invalid task index.")
 
 def list_tasks(tasks):
+    """
+    Prints all tasks with their completed status.
+
+    :param tasks: List of tasks
+    :return: None
+    """
     if not tasks:
         print("No tasks available.")
         return
