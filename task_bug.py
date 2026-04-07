@@ -56,6 +56,12 @@ def list_tasks(tasks):
         print(f"{index}. {'[X]' if task[1] else '[ ]'} {task[0]}")
 
 def sort_tasks(tasks):
+    """
+    Sorts task alphabetically by description.
+
+    :param tasks: List of tasks
+    :return: None
+    """
     tasks.sort(key=lambda x: x[0])
 
 def binary_search(tasks, target):
