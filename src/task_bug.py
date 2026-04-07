@@ -54,7 +54,7 @@ def binary_search(tasks, target):
 
 def main():
     tasks = []
-    breakpoint()
+    # breakpoint()
 
     while True:
         print("\n1. Add Task")
@@ -71,7 +71,7 @@ def main():
             task = input("Enter task description: ")
             add_task(tasks, task)
         elif choice == "2":
-            pdb.set_trace()
+            # pdb.set_trace()
             index = int(input("Enter task index to mark as completed: "))
             mark_task_completed(tasks, index)
         elif choice == "3":
