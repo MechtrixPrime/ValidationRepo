@@ -17,7 +17,8 @@ def add_task(tasks, task):
 
 def mark_task_completed(tasks, index):
     if 0 <= index < len(tasks):
-        tasks[index] = True
+        task_desc, _ = tasks[index]
+        tasks[index] = (task_desc, True)
     else:
         print("Invalid task index.")
 
