@@ -12,8 +12,8 @@ import pdb
 # import os
 
 def add_task(tasks, task):
-    breakpoint()
-    task.append((task, False))
+    # breakpoint()
+    tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
     if 0 <= index < len(tasks):
