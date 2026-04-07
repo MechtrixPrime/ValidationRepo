@@ -29,6 +29,13 @@ def mark_task_completed(tasks, index):
         print("Invalid task index.")
 
 def delete_task(tasks, index):
+    """
+    Deletes a task from the tasks list.
+
+    :param tasks: List of tasks
+    :param index: Index of the task
+    :return: None
+    """
     if 0 <= index < len(tasks):
         tasks.remove(tasks[index])
     else:
