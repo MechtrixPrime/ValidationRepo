@@ -34,7 +34,7 @@ def list_tasks(tasks):
         return
 
     for index, task in enumerate(tasks):
-        print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}")
+        print(f"{index}. {'[X]' if task[1] else '[ ]'} {task[0]}")
 
 def sort_tasks(tasks):
     tasks.sort(key=lambda x: x[0])
